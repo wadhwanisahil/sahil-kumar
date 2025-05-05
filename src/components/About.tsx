@@ -51,15 +51,20 @@ const About = () => {
           </div>
           
           <div className="relative group animate-fade-up" style={{ animationDelay: "300ms" }}>
-            <div className="relative rounded overflow-hidden aspect-square">
-              <img 
-                src="/lovable-uploads/bbeeba17-5d12-49fe-a6de-d5f8b7acf62f.png" 
-                alt="Sahil Kumar"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-portfolio-teal/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+            <div className="relative rounded-full overflow-hidden aspect-square">
+              <Avatar className="w-full h-full">
+                <AvatarImage 
+                  src="/lovable-uploads/bbeeba17-5d12-49fe-a6de-d5f8b7acf62f.png" 
+                  alt="Sahil Kumar"
+                  className="object-cover"
+                />
+                <AvatarFallback className="bg-portfolio-light-navy text-portfolio-teal text-4xl">
+                  SK
+                </AvatarFallback>
+              </Avatar>
+              <div className="absolute inset-0 bg-portfolio-teal/10 group-hover:bg-transparent transition-colors duration-300 z-10 rounded-full"></div>
             </div>
-            <div className="absolute inset-0 border-2 border-portfolio-teal rounded translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
+            <div className="absolute inset-0 border-2 border-portfolio-teal rounded-full translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
           </div>
         </div>
       </div>
