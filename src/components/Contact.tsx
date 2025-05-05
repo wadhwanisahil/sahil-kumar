@@ -33,10 +33,10 @@ const Contact = () => {
             <div className="flex flex-col items-center">
               <span className="text-portfolio-teal mb-2">Phone</span>
               <a 
-                href="tel:+923000000000" 
+                href="tel:+923048230302" 
                 className="text-portfolio-light-slate hover:text-portfolio-teal transition-colors"
               >
-                +92 300 000 0000
+                +92 304 823 0302
               </a>
             </div>
             

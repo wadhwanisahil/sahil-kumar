@@ -1,5 +1,6 @@
 
 import { cn } from "@/lib/utils";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
   const skills = [
@@ -51,10 +52,12 @@ const About = () => {
           
           <div className="relative group animate-fade-up" style={{ animationDelay: "300ms" }}>
             <div className="relative rounded overflow-hidden aspect-square">
-              <div className="absolute inset-0 bg-portfolio-teal/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
-              <div className="w-full h-full bg-portfolio-teal/60 flex items-center justify-center text-portfolio-navy font-bold text-4xl">
-                SK
-              </div>
+              <img 
+                src="/lovable-uploads/bbeeba17-5d12-49fe-a6de-d5f8b7acf62f.png" 
+                alt="Sahil Kumar"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-portfolio-teal/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
             </div>
             <div className="absolute inset-0 border-2 border-portfolio-teal rounded translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
           </div>
